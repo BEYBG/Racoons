@@ -1,0 +1,656 @@
+
+
+/*----------------------------------------HEADER.JS---------------------------*/
+
+.header {
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 1.5rem; 
+}
+
+.header img {
+    width: 5rem; 
+}
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.header-list li {
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        list-style: none;
+    }
+
+.header-list li:hover {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 black;
+}
+.header-list a {
+    text-decoration: none; 
+    color: black;
+}
+
+
+
+
+
+/*----------------------------------BLOG.JS--------------------------*/
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.info-column {
+    width: 80%;
+    background-color: black;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family:'Comic Sans MS';
+    color: white;
+}
+
+
+.block-1{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.block-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.block-2 img {
+    width: 16rem;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: lightslategrey;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 15px 0 black;
+}
+
+
+.body-blog {
+    width: 80%;
+    height: auto;
+    padding: 3.5rem;
+    margin: 2.5rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px 0 black;
+}
+
+.body-blog h2 {
+    font-family: 'Agency FB';
+    font-size: 2rem;
+}
+
+.blog-gallery-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.blog-gallery-container section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+.blog-gallery-container section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.blog-gallery-container section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
+
+/*---------------------FOOTER.JS-------------------------------*/
+.footer {
+
+    width: 100%;
+    background-color: darkgray;
+    box-shadow: inset 0 0 15px 0 black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer li {
+    width: 5rem;
+    height: 4rem;
+    list-style: none;
+    font-size: 3rem;  
+    align-content: center;
+    
+}
+
+    .footer li:hover {
+        color: white;
+        filter: drop-shadow(3px 3px 5px black);
+    }
+
+
+/* --------------------------------CONTAC.JS-------------------*/
+
+
+.contact-container {
+    
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contact-container h2 {
+    height: 2.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.contact-container p {
+    padding-left: 4rem; 
+    padding-right: 4rem;
+    font-size: 1.5rem;
+}
+
+.contact-container form {
+    width: 60%;
+    
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    padding: 2rem; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.form-group label {
+    padding: 1rem;
+}
+
+.form-group input {
+    padding: 1rem;
+}
+
+#message {
+    height: 10rem;
+}
+
+.contact-container button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem; 
+    font-size: 1.5rem;
+    margin: 1.5rem; 
+}
+
+.contact-container button:hover {
+    color: white;
+    background-color: black;
+}
+
+/* -------------------------------------------------------------GALLERY-------------------------------------------------*/
+.gallery-container {
+    max-width: 2000px;
+    width: 100%;
+    min-height: 100vh; /* Establecer altura mínima igual al alto de la pantalla */
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+    .gallery-container .marco {
+        position: relative; /* Añadir posición relativa al contenedor de la imagen */
+        width: 1000px; 
+        height: 800px; 
+        display: flex;
+        flex-direction: column;
+        overflow: hidden; /* Ocultar el contenido que se desborde */
+    }
+
+    .gallery-container img {
+        display: block;
+        width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+        height: 100%; /* Ajustar la altura de la imagen al 100% del contenedor */
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 15px 0 white;
+    }
+
+     .buttons-container {
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        margin-top: 1rem; 
+        
+    }
+
+    .buttons-container button {
+        width: 5rem;
+        height: 4rem;
+        background-color: white; 
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+      
+    }
+
+        .gallery-container button:hover {
+            background-color: black;
+            color: white;
+            box-shadow:inset 0 0 10px 0 white; 
+        }
+
+
+
+/*--------------------------------------------------------------ABOUT ------------------------------ */
+
+.about-container {
+    width: 100%;
+    min-height: 100vh;
+    height:max-content;
+    background-color: lightslategrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 15px 0 black;
+    padding-top: 3%;
+  
+}
+
+.about-info {
+    height: max-content;
+    position: relative;
+    background-color: black;
+    width: 80%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 0 15px 0 black;
+}
+
+/* ------------------------------------------------------------------------- HOME ------------------------------------ */
+
+.home-container {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+    .home-container img {
+        max-width: 100vw;
+        min-height: 70vh;
+        display: flex;
+        object-fit: cover;
+    }
+
+/*----------------------------------------------------------------------------- Estilos para Media Queries ------------------------------------------------ */
+
+
+
+@media only screen and (max-width: 480px) {
+    .header {
+        height: 5rem; /* Ajustado el alto del header para dispositivos móviles */
+    }
+
+        .header img {
+            width: 3rem; /* Ajustado el tamaño de la imagen para dispositivos móviles */
+        }
+
+    .header-list li {
+        padding: 0.5rem; /* Ajustado el espacio entre los elementos de la lista para dispositivos móviles */
+        font-size: 1rem; /* Reducido el tamaño de la fuente para dispositivos móviles */
+    }
+
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .info-column {
+        width: 100%;
+        order: 2; /* Cambiar el orden para que aparezca después de .content */
+    }
+
+    .content {
+        order: 1; /* Cambiar el orden para que aparezca antes de .info-column */
+        width: 100%;
+        
+    }
+
+    .content h1 {
+        font-size: 1.4rem; 
+    }
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+
+    .body-blog {
+        width: 80%;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .block-2 img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blog-gallery-container section {
+        width: 100%;
+        overflow-x: auto; /* Añadido para permitir desplazamiento horizontal */
+    }
+   
+    .about-info {
+        width: 70%;
+        font-size: 0.9rem;
+    }
+
+    .gallery-container {
+        justify-content: flex-start;
+        padding-top: 1.5rem;
+    }
+
+    .gallery-container .marco {
+        width: 90%; /* Reducir el ancho del marco en pantallas pequeñas */
+        height: auto; /* Hacer que la altura se ajuste automáticamente */
+    }
+
+    .buttons-container {
+        height: 3rem;
+    }
+        .buttons-container button {
+            height: 3rem;
+        }
+
+        .contact-container {
+            font-size: 1rem;
+        }
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 599px) {
+    .header {
+        height: 5rem; /* Ajustado el alto del header para dispositivos móviles */
+    }
+
+        .header img {
+            width: 4rem; /* Ajustado el tamaño de la imagen para dispositivos móviles */
+        }
+
+    .header-list li {
+        padding: 0.5rem; /* Ajustado el espacio entre los elementos de la lista para dispositivos móviles */
+        font-size: 1.2rem; /* Reducido el tamaño de la fuente para dispositivos móviles */
+    }
+
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .info-column {
+        width: 100%;
+        order: 2; /* Cambiar el orden para que aparezca después de .content */
+    }
+
+    .content {
+        order: 1; /* Cambiar el orden para que aparezca antes de .info-column */
+        width: 100%;
+    }
+
+        .content h1 {
+            font-size: 1.5rem;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+        }
+
+    .body-blog {
+        width: 80%;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .block-2 img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blog-gallery-container section {
+        width: 100%;
+        overflow-x: auto; /* Añadido para permitir desplazamiento horizontal */
+    }
+
+    .gallery-container {
+        padding-top: 2rem;
+        justify-content: flex-start;
+    }
+
+    .gallery-container .marco {
+        width: 90%; /* Reducir el ancho del marco en pantallas pequeñas */
+        height: auto; /* Hacer que la altura se ajuste automáticamente */
+    }
+
+    .about-info {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    .header-list li {
+        padding: 0.5rem; /* Ajustado el espacio entre los elementos de la lista para dispositivos móviles */
+        font-size: 1.5rem; /* Reducido el tamaño de la fuente para dispositivos móviles */
+    }
+    .header img {
+        width: 5rem; /* Ajustado el tamaño de la imagen para dispositivos más grandes */
+    }
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .info-column {
+        width: 100%;
+        order: 2; /* Cambiar el orden para que aparezca después de .content */
+    }
+
+    .content {
+        order: 1; /* Cambiar el orden para que aparezca antes de .info-column */
+    }
+
+    .body-blog {
+        width: 80%;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .block-2 img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blog-gallery-container section {
+        width: 100%;
+        overflow-x: auto; /* Añadido para permitir desplazamiento horizontal */
+    }
+    .gallery-container {
+        justify-content: flex-start;
+        padding-top: 2.5rem;
+    }
+
+        .gallery-container .marco {
+            width: 90%; /* Reducir el ancho del marco en pantallas pequeñas */
+            height: auto; /* Hacer que la altura se ajuste automáticamente */
+        }
+
+
+    .about-info {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header {
+        height: 8rem; /* Ajustado el alto del header para dispositivos medianos */
+    }
+
+    .header-list li {
+        padding: 0 3rem; /* Ajustado el espacio entre los elementos de la lista para dispositivos móviles */
+        font-size: 1.8rem; /* Reducido el tamaño de la fuente para dispositivos móviles */
+    }
+
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .info-column {
+        width: 100%;
+        order: 2; /* Cambiar el orden para que aparezca después de .content */
+    }
+
+    .content {
+        order: 1; /* Cambiar el orden para que aparezca antes de .info-column */
+    }
+
+    .body-blog {
+        width: 80%;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .block-2 img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blog-gallery-container section {
+        width: 100%;
+        overflow-x: auto; /* Añadido para permitir desplazamiento horizontal */
+    }
+    .gallery-container {
+        justify-content: flex-start;
+        padding-top: 3rem;
+    }
+
+        .gallery-container .marco {
+            width: 90%; /* Reducir el ancho del marco en pantallas pequeñas */
+            height: auto; /* Hacer que la altura se ajuste automáticamente */
+        }
+
+    .about-info {
+        width: 80%;
+        font-size: 1.rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header img {
+        width: 6rem; /* Restaurado el tamaño original de la imagen para dispositivos más grandes */
+    }
+    .header-list li {
+        padding: 0 3rem; /* Ajustado el espacio entre los elementos de la lista para dispositivos móviles */
+        font-size: 2rem; /* Reducido el tamaño de la fuente para dispositivos móviles */
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+
+    .header-list li {
+        padding: 0 4rem; /* Ajustado el espacio entre los elementos de la lista para dispositivos móviles */
+        font-size: 2.5rem; /* Reducido el tamaño de la fuente para dispositivos móviles */
+    }
+
+
+
+}
+
+
